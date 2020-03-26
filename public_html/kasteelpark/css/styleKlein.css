@@ -1,0 +1,111 @@
+h1,
+h2,
+h3 {
+    font-family: Kavivanar, cursive, sans-serif;
+}
+
+footer {
+    background-color: #3b7368 !important;
+}
+
+#logo {
+    position: relative;
+    top: 13px;
+}
+
+#pagina {
+    box-shadow: 0px 0px 15px #000;
+    width: 100%;
+}
+
+.carousel .carousel-item {
+    width: 300px !important;
+}
+
+footer a {
+    text-decoration: underline !important;
+    color: #fff;
+}
+
+footer a:hover {
+    background-color: #fff;
+    color: #3b7368;
+}
+
+#logoMB {
+    display: block;
+}
+
+#logoMB:hover {
+    background-color: #3b7368;
+}
+
+nav div a {
+    background-color: #3b7368;
+    color: #fff;
+}
+
+#navigatie {
+    background-color: #3b7368;
+    color: #fff;
+}
+
+.vet {
+    font-weight: bold;
+}
+
+#navigatie .container {
+    width: 100% !important;
+}
+
+#navigatie .container .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#navigatie .row {
+    margin-bottom: 0px !important;
+}
+
+nav {
+    height: auto !important;
+}
+
+nav ul li a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #dee33e;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #64c5b2;
+}
+
+.parallax-container {
+    color: #64c5b2;
+    text-shadow: 0px 0px 15px #000;
+    height: 450px;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.font40 {
+    font-size: 40px;
+}
+
+.font38 {
+    font-size: 38px;
+}
+
+#fotolager {
+    display: none;
+}
+
+.hoofdtitel {
+    font-size: 4.2rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+}
