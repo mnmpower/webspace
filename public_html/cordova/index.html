@@ -1,1 +1,368 @@
-<h1>onepager make over cordova app</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Maarten Michiels">
+
+    <title>Cordova - Dungeons And Dragons</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">D&D - Character creation</span>
+        <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#splashscreen">Splashscreen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#charactercreation">Character Creation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#diceroller">Dice roller</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#mycharacters">My characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#charactersdetails">Character details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#qrcode">QR-Code</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#initiative">Initiative tracker</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overons">
+        <div class="w-100">
+            <h1 class="mb-0">D&D -
+                <span class="text-primary">Character creation</span>
+            </h1>
+            <div class="subheading mb-5">ITFactory - 2APP/BIT - Cordova - Sebastiaan Reggers & Michiels Maarten
+            </div>
+            <p class="lead mb-5">Na 4 zelfstudie lessen van het vak cordova hebben we een project gemaakt. Dit project
+                mocht gaan over een onderwerp naar keuze. Er waren echter een paar verijsten. Zo moet er data worden
+                uitgelezen worden van een bestand, en deze moest in de app getoond worden.<br>Daarnaast moesten we
+                gebruik
+                maken van een plugin die we online gevonden hadden en er moest data worden opgeslagen in local
+                storage.</p>
+            <div class="social-icons">
+
+                <a href="https://github.com/mnmpower/DndCharacterCreation">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center">
+        <div class="w-100">
+
+
+            <h2 class="mb-5">De applicatie</h2>
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="home">Home</h3>
+                    <div class="subheading mb-3">Het navigatieschermnaar de verschillende functionaliteiten</div>
+                    <p>Omdat de applicatie een aantal gegevens moet ophalen en deze inladen in de applicatie, is er een
+                        splashscreen toegevoegd. Dit is een afbeelding die getoond wordt bij het opstarten. Dit voorkomt
+                        dat er een leeg scherm getoond wordt, of er nog dingen bijkomen op het startscherm nadat de app
+                        al is opgestart.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen1.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="splashscreen">Splashscreen</h3>
+                    <div class="subheading mb-3">Een afbeelding bij het opstarten.</div>
+                    <p>Omdat de applicatie een aantal gegevens moet ophalen en deze inladen in de applicatie, is er een
+                        splashscreen toegevoegd. Dit is een afbeelding die getoond wordt bij het opstarten. Dit voorkomt
+                        dat er een leeg scherm getoond wordt, of er nog dingen bijkomen op het startscherm nadat de app
+                        al is opgestart.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/splash.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="charactercreation">Character creation</h3>
+                    <div class="subheading mb-3">stap 1 bij het maken van een nieuw character</div>
+                    <p>De gebruiker krijgt eerst de kans om de verschillende "Fighting styles" te lezen. Vervolgens moet
+                        hij er een kiezen. Als hij er een geselecteerd heeft, krijgt hij alle "Classes" te zien die
+                        bij de gekozen "Fighting style" behoren.<br/> Hij maakt opnieuw een keuze en krijgt vervolgens
+                        alle "Races" te zien. Nadat hij
+                        een race gekozen heeft kan hij onderaan zijn keuze nakijken en doorgaan naar de volgende stap.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen2.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0">Character creation</h3>
+                    <div class="subheading mb-3">stap 2 bij het maken van een nieuw character</div>
+                    <p>De gebruiker moet een totaal van 32 punten verdelen over 6 verschillende "Ability's" van zijn
+                        character. Hoe meer punten je in een "Ability" steekt, hoe sterker deze wordt. Natuurlijk wordt
+                        deze ook wel duurder.
+                        het systeem gaat als volgt.<br/> De eerste 4 punten kosten maar 1 punt. De volgende 2 kosten 2
+                        punten elks, en de laatste 2 kosten elks 3 punten om 1 punt meer te krijgen. Het hoogste wat een
+                        "Ability" kan worden is 18.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen3.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0">Character creation</h3>
+                    <div class="subheading mb-3">stap 3 bij het maken van een nieuw character</div>
+                    <p>In de laatste stap geef je een aantal kenmerken op van je character. Zo geef je hem een naam en
+                        een voornaam, een geslacht en bepaal je zijn "Alignment". Dit is het type van karakter dat je
+                        personage heeft. <br> Sla je character op en je bent klaar.<br>Op dit moment staat jou character
+                        enkel op jou eigen toestel!!!
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen4.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="diceroller">Dice roller</h3>
+                    <div class="subheading mb-3">Virtuele dobbelstelen met 4 tot 20 zijden.</div>
+                    <p>Omdat er bij D&D enorm veel dobbelstenen gerold worden, Zit er ook een dice roller mee in de
+                        applicatie. Hierbij kan een persoon eerst het aantal dobbelstenen selecteren dar er gerold moet
+                        worden. En vervolgens drukt hij op het dobbelsteen icoontje. Daarna worden de geworpen getallen
+                        getoond.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen5.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="mycharacters">My characters</h3>
+                    <div class="subheading mb-3">All characters waar jij aan kan.</div>
+                    <p>Als je al characters hebt aangemaakt, kan je die terugvinden op deze pagina. Er staat ook een
+                        scan knop op. Deze dient om de QR-code te scannen van een ander personage. Na het scannen komt
+                        het gescande personage mee in jou lijst te staaan.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen6.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="charactersdetails">Character details</h3>
+                    <div class="subheading mb-3">Toont de gegevens van het geselecteerde character</div>
+                    <p>Op deze pagina krijg je een eenvoudig overzicht met daarop alle gegevens die je hebt moeten
+                        ingeven bij het aanmaken van het character.Je hebt ook drie knoppen.
+                        <br/>"Show QR" toont een qr code die gescant kan worden door een andere speler.
+                        <br/>"Delete" verwijderd het character van jou toestel
+                        <br/>"Save online" zorgt dat het character wordt opgeslagen in de cloud, waardoor andere mensen
+                        dit kunnen overnemen nadat de QR-code gescand is.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen7.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="qrcode">QR-code</h3>
+                    <div class="subheading mb-3">Scanbare QR code om characters door te geven</div>
+                    <p>Deze pagina toont een qr code die gescant kan worden door een andere speler. Deze code bevat alle
+                        gegevens die nodig zijn om het juiste personage op te halen van de cloud. Je moet wel eerst de
+                        "save online" knop gebruikt hebben bij je character voor je dit kan delen. Deze knop zorgt dat
+                        het
+                        character wordt opgeslagen in de cloud, waardoor andere mensen
+                        dit kunnen overnemen met de QR-code.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen8.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="initiative">Initiative tracker</h3>
+                    <div class="subheading mb-3">Selectiescherm</div>
+                    <p>Je krijgt op deze pagina alle characters te zien die op jou toestel staan. Vervolgens duid je
+                        alle
+                        personages aan waarmee momenteel gespeeld wordt. je klick op de "choose" knop.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen9.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0">Initiative tracker</h3>
+                    <div class="subheading mb-3">Resultaat</div>
+                    <p>Nadat je op de "choose" knop het gedrukt krijg je een pop up melding. Hierin staan alle gekozen
+                        characters met de initiative die ze gerold hebben. Deze lijst is ook ineens gesorteerd zodatde
+                        hoogste rol bovenaan staat. Dit is de volgorde waarin de spelers aan de beurt zijn.
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/screen10.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+            <!--    1BLOK   VAN HIER-->
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="resume-content w-75 mb-3">
+                    <h3 class="mb-0" id="about">About us</h3>
+                    <div class="subheading mb-3">Infoscherm over de makers van de applicatie</div>
+                    <p>Op dit scherm wordt meer uitleg vinden over de makers van de applicatie. Daaronder krijg je meer
+                        uitleg over de verschillende functionaliteiten. Deze zijn:
+                    <ol>
+                        <li>Character Creation</li>
+                        <li>Dice roller</li>
+                        <li>Initiative roller</li>
+                        <li>Your characters</li>
+                    </ol>
+                    </p>
+                </div>
+                <div class="w-100 align-content-center">
+                    <div class="resume-date text-md-center m-w-400 mx-auto">
+                        <img src="img/about.jpg" alt="about the app" class="embed-responsive center-block">
+                    </div>
+                </div>
+            </div>
+            <!--TOT HIER -->
+
+
+        </div>
+    </section>
+
+    <hr class="m-0">
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
