@@ -1,0 +1,248 @@
+body {
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px #666;
+    padding: 10px;
+    background-color: #fff;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.schaduw {
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+    box-shadow: -4px 4px 12px 0px #bbb;
+}
+
+figure:hover {
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.eigenKleur {
+    color: #1c97bb;
+}
+
+figure {
+    padding: 20px;
+}
+
+.flexgroot {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.breedte {
+    max-width: 320px;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.lager {
+    position: relative;
+    top: 0px;
+}
+
+img {
+    margin-top: 0px;
+}
+
+.centreren {
+    max-width: 400px;
+    margin: auto;
+}
+
+.left-align {
+    max-width: 400px;
+    margin: auto;
+}
+
+.right-align {
+    max-width: 400px;
+    margin: auto;
+}
+
+#links {
+    text-align: justify;
+}
+
+#rechts {
+    text-align: justify;
+}
+
+#midden {
+    text-align: justify;
+}
+
+a {
+    background-clip: inherit;
+    color: #000;
+}
+
+#kleur {
+    color: #fff;
+}
+
+#rudi {
+    display: block;
+}
+
+#rudi2 {
+    position: relative;
+    top: 10px;
+}
+
+a:hover {
+    color: #555 !important;
+}
+
+#kleur a:hover {
+    text-shadow: 0px 0px 2px #000;
+}
+
+#link1 {
+    background-color: inherit;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+#wisselen {
+    background-color: inherit;
+    color: #fff;
+    text-shadow: 0px 0px 5px black;
+    position: relative;
+    top: 60px;
+}
+
+.rudi3 {
+    position: absolute;
+    top: 20px;
+    text-shadow: 0 0 5px #000;
+}
+
+.opvallend {
+    text-shadow: 0 0 5px #000;
+}
+
+.maxwidth {
+    max-width: 230px;
+}
+
+@media only screen and (min-width:100px) {
+    .maxwidth {
+        position: relative;
+        left: 14% !important;
+    }
+}
+
+@media only screen and (min-width:450px) {
+    .maxwidth {
+        position: relative;
+        left: 20% !important;
+    }
+}
+
+@media only screen and (min-width:550px) {
+    .maxwidth {
+        position: relative;
+        left: 24% !important;
+    }
+}
+
+@media only screen and (min-width:650px) {
+    .maxwidth {
+        position: relative;
+        left: 29% !important;
+    }
+}
+
+@media only screen and (min-width:750px) {
+    .maxwidth {
+        position: relative;
+        left: 32% !important;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    .maxwidth {
+        position: relative;
+        left: 33% !important;
+    }
+}
+
+@media only screen and (min-width:950px) {
+    .maxwidth {
+        position: relative;
+        left: 35% !important;
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .maxwidth {
+        position: relative;
+        left: 0!important;
+    }
+}
+
+.centerK {
+    align-content: center;
+}
