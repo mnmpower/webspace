@@ -17,6 +17,10 @@
     <!-- Custom styles for this template -->
     <link href="css/blog-post.css" rel="stylesheet">
 
+
+    <!-- Custom FONT AWESOME for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,10 +44,7 @@
                     <a class="nav-link" href="project4.html">Project 4.0</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iceHonours.html">Ice Honours</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#projects">Andere projecten</a>
+                    <a class="nav-link" href="https://icewire.be" target="_blank">Ice Honours</a>
                 </li>
             </ul>
         </div>
@@ -53,26 +54,27 @@
 <!-- Page Content -->
 <div class="container">
 
+    <!-- Title -->
+    <h1 class="mt-4">Stage - Applicatie met nummerplaat herkenning</h1>
+
+    <!-- Author -->
+    <p class="lead">
+        Bij
+        <a href="https://www.rhea.be/">Rhea N.V.</a>
+    </p>
+
+    <hr>
+
+    <!-- Date/Time -->
+    <p>2 Maart 2020 - 29 mei 2020</p>
+
+    <hr>
+
     <div class="row">
 
         <!-- Post Content Column -->
-        <div class="col-lg-8">
+        <div class="col-lg-8 ">
 
-            <!-- Title -->
-            <h1 class="mt-4">Stage - Applicatie met nummerplaat herkenning</h1>
-
-            <!-- Author -->
-            <p class="lead">
-                bij
-                <a href="https://www.rhea.be/">Rhea N.V.</a>
-            </p>
-
-            <hr>
-
-            <!-- Date/Time -->
-            <p>2 Maart 2020 - 29 mei 2020</p>
-
-            <hr>
 
             <!-- Preview Image -->
             <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
@@ -80,32 +82,79 @@
             <hr>
 
             <!-- Post Content -->
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <p class="lead text-justify">Tijdens het laatste jaar van mijn studies in de ITFactory van Thomas More liep
+                ik gedurende
+                13 weken stage bij het bedrijf Rhea N.V. Zij zijn een klein bedrijf met een 15 tal
+                werknemers. Ze zijn lid van de Cronos groep en
+                bestaan al meer dan 20 jaar. Voorlopig houden ze zich bezig met grote 3 pijlers.
+            </p>
+            <ul>
+                <li class="lead">Applicatie ontwikkeling met IOT, AI, RPA (Robot gestuurde procesautomatisering)</li>
+                <li class="lead">Herschrijving of de herontwikkeling van oude applicaties</li>
+                <li class="lead">Onderhoud van hun gemaakte applicaties</li>
+            </ul>
+            <h2>De opdracht</h2>
+            <p class="text-justify">Binnen het bedrijf Rhea NV was er de vraag om een applicatie te maken om problemen
+                die zich voordoen op
+                de parking vlotter af te kunnen handelen. Dit was een idee dat ze al een tijd hadden, maar waar nog
+                nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze proof of concept te bestuderen en
+                daarna af te maken.</p>
+            <h2>Analysefase</h2>
+            <p class="text-justify">Ik ben begonnen met verschillende delen van het project te analyseren. Als eerste
+                ben ik op zoek gegaan
+                naar een goed softwarepakket dat me kon helpen bij de nummerplaatherkenning. Deze heb ik dan
+                onmiddelijke in de praktijk beginnen testen. Zo heb ik stuk voor stuk toegewerkt naar mijn
+                plaatherkennigns API.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <p class="text-justify">Vervolgens ben ik me gaan verdiepen in het Vidyano framework. Omdat dit framework
+                redelijk centraal staat in Rhea NV was dit de basis van mijn project en moest ik zorgen dat alle andere
+                componenten hiermee konden samen werken. Vidyano ondersteund zelf al enorm veel verschillende
+                componenten die ik kon gebruiken waardoor het bijna niet meer nodig was om nog andere dingen te
+                integreren.</p>
+            <h2>Realisatiefase</h2>
+            <p class="text-justify">De uitwerking van mijn opdracht omvat op dit punt een <b>docker</b> container met
+                daarin de
+                API die ik gemaakt heb. In deze docker container heb ik ook de software geïnstaleerd voor mijn
+                nummerplaat herkenning. Dit is een programa dat bij het opstarten maar een foto binnen krijgt en daarvan
+                een keer een output met mogelijkse nummerplaten terug geeft. De API gaat deze telken als hij een foto
+                binnen krijgt, dit programma opstarten en de foto doortsturen. De API vangt de respons op en geeft deze
+                als zijn antwoord terug door.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <p class="text-justify">Daarnaast heb ik ook nog de applicatie in het <b>Vidyano</b> framework. Deze bevat
+                de database met alle gegevens die de applicatie nodig heeft. Vidyano maakt gebruik van webcomponents op
+                basis van <b>"Polymer"</b>. Deze heb ik extra stijl gegeven met de <b>Bootstrap</b> library. De
+                applicatie zelf spreekt de achter camera aan van het toestel aan. Deze begint te filmen en stuurt op
+                regelmatige basis screenshots van de video door naar de API. Zodra deze een geldige respons terug geeft
+                stop de camera met filmen. Dan kan de gebruiker nog een melding selecteren of invullen en wordt er een
+                mail gestuurd naar de eigenaar van de bedrijfswagen met de melding. Zo kan deze notie nemen van het
+                voorval.</p>
 
-            <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.</p>
-                <footer class="blockquote-footer">Someone famous in
-                    <cite title="Source Title">Source Title</cite>
-                </footer>
-            </blockquote>
+            <h2>Stage verloop</h2>
+            <p class="text-justify">Omdat ik een goede start heb genomen en een enorm goede analyse gedaan heb kon ik
+                enorm vlot starten met de realisatie van mijn stage. Daardoor was de uitwerking van mijn stageopdracht
+                redelijk snel klaar. We hebben de opdracht dan uitgebreid met enkele handige extra’s. Een daarvan was om
+                de foto knopte vervangen door de camera die filmt en constant zelf foto’s doorstuurt tot dat deze een
+                geldige nummerplaat vindt. Zo moet de gebruiker niet constant opnieuw de camera opstarten om een foto te
+                trekken als de foto niet duidelijk getrokken is vanaf de eerste keer.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
-                totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+            <p class="text-justify">Nadat ik nog een aantal andere kleine verbeteringen heb gemaakt aan de applicatie
+                moeten we wachten op de
+                update van het framework. Deze update hield in dat Vidyano volledig compatibel is met docker. Na deze
+                update moest ik dus heel de applicatie overzetten en laten werken in docker containers. </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-                tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
-                Qui, necessitatibus, est!</p>
+            <p class="text-justify">Tijdens de periode dat ik moest wachten op de update heb ik mezelf verdiept in het
+                gebruiken van docker containers en meer bepaald hoe je verschillende containers kan laten samenwerken
+                via docker-compose. Dit heb ik gedaan door een testproject volledig docker compatibel te maken en uit te
+                zoeken hoe ik dit kan hosten. </p>
+
+            <p class="text-justify">Na de update heb ik heel mijn applicatie overgezet en volledig laten werken in
+                docker. Dit was dan ook het einde van mijn stage.</p>
+            <h2>Extra info</h2>
+            <p class="text-justify text-muted">Als u meer wilt weten over mijn stage en de opdracht zelf verwijs ik u
+                door naar de
+                documenten die ik gelinkt heb. Deze bevatten alle informatie over de opdracht en gaan dieper in op de
+                analyse, de realisatie en mijn uitwerking van de opdracht. De code staat ook beschikbaar op GitHub zodat
+                u deze kan bekijken.</p>
 
             <hr>
         </div>
@@ -117,33 +166,27 @@
             <div class="row">
                 <!-- Categories Widget -->
 
-                <div class="card my-4 col-md-6 col-lg-12">
-                    <h5 class="card-header">Gemaakte bestanden</h5>
+                <div class="card mb-3 col-md-6 col-lg-12">
+                    <h5 class="card-header">Analysefase</h5>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-12">
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="#">Web Design</a>
+                                        <a href="#"
+                                           download target="_blank">Analyse document</a>
                                     </li>
                                     <li>
-                                        <a href="#">HTML</a>
+                                        <a href="#"
+                                           download target="_blank">Plan van aanpak</a>
                                     </li>
                                     <li>
-                                        <a href="#">Freebies</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="#">JavaScript</a>
+                                        <a href="#"
+                                           download target="_blank">Presentatie plan van aanpak analysefase</a>
                                     </li>
                                     <li>
-                                        <a href="#">CSS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tutorials</a>
+                                        <a href="#"
+                                           download target="_blank">Database structuur</a>
                                     </li>
                                 </ul>
                             </div>
@@ -152,11 +195,92 @@
                 </div>
 
                 <!-- Side Widget -->
-                <div class="card my-4 col-md-6 col-lg-12">
-                    <h5 class="card-header">nog iets</h5>
+                <div class="card mb-3 col-md-6 col-lg-12">
+                    <h5 class="card-header">Realisatiefase</h5>
                     <div class="card-body">
-                        You can put anything you want inside of these side widgets. They are easy to use, and feature
-                        the new Bootstrap 4 card containers!
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Gebruikers handleiding</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Installatie handleiding</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Plan van aanpak realisatiefase</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Eindpresentatie project</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 col-md-6 col-lg-12">
+                    <h5 class="card-header">Vergaderingen</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="https://drive.google.com/open?id=1BdBOVnCl6Tf0imFH5SdmfVfPTCu99H-B"
+                                           download target="_blank">Agenda Startvergadering</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/open?id=1zGN8v29doumiix7ba4GUYIQdpUl7YrZC"
+                                           download target="_blank">Verslag Startvergadering</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 col-md-6 col-lg-12">
+                    <h5 class="card-header">Overige</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Presentatie terugkommoment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Reflextie verslag</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           download target="_blank">Logboek</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Widget -->
+                <div class="card mb-3 col-md-6 col-lg-12">
+                    <h5 class="card-header">Code op GitHub</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="https://github.com/mnmpower/Stage---AlprApp" target="_blank" class="mx-2">
+                                    <i class="fab fa-github"></i> Vidyano Project - Frontend </a>
+                                <br>
+                                <a href="https://github.com/mnmpower/Stage---PlateAPI" target="_blank" class="mx-2">
+                                    <i class="fab fa-github"></i> .NET Core API met Docker
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
