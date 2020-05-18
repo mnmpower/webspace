@@ -55,7 +55,7 @@
 <div class="container">
 
     <!-- Title -->
-    <h1 class="mt-4">Stage - Applicatie met nummerplaat herkenning</h1>
+    <h1 class="mt-4">Stage - Applicatie met nummerplaatherkenning</h1>
 
     <!-- Author -->
     <p class="lead">
@@ -83,76 +83,79 @@
 
             <!-- Post Content -->
             <p class="lead text-justify">Tijdens het laatste jaar van mijn studies in de ITFactory van Thomas More liep
-                ik gedurende
-                13 weken stage bij het bedrijf Rhea N.V. Zij zijn een klein bedrijf met een 15 tal
-                werknemers. Ze zijn lid van de Cronos groep en
-                bestaan al meer dan 20 jaar. Voorlopig houden ze zich bezig met grote 3 pijlers.
+                ik gedurende 13 weken stage bij het bedrijf Rhea N.V. Dat is een klein bedrijf met een 15-tal
+                werknemers. Het is lid van de Cronos Groep en bestaat al meer dan 20 jaar. Voorlopig houdt het zich
+                bezig met drie grote pijlers:
             </p>
             <ul>
-                <li class="lead">Applicatie ontwikkeling met IOT, AI, RPA (Robot gestuurde procesautomatisering)</li>
-                <li class="lead">Herschrijving of de herontwikkeling van oude applicaties</li>
-                <li class="lead">Onderhoud van hun gemaakte applicaties</li>
+                <li class="lead">Applicatie-ontwikkeling met IOT, AI en Robot gestuurde procesautomatisering</li>
+                <li class="lead">Herschrijven of herontwikkelen van oude applicaties</li>
+                <li class="lead">Onderhoud van zelfgemaakte applicaties</li>
             </ul>
+
             <h2>De opdracht</h2>
-            <p class="text-justify">Binnen het bedrijf Rhea NV was er de vraag om een applicatie te maken om problemen
-                die zich voordoen op
-                de parking vlotter af te kunnen handelen. Dit was een idee dat ze al een tijd hadden, maar waar nog
-                nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze proof of concept te bestuderen en
+            <p class="text-justify">Binnen het bedrijf Rhea NV was er de nood om een applicatie te maken om problemen
+                die zich voordoen op de parking vlotter af te kunnen handelen. Het bleef maar bij een idee omdat er nog
+                nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze 'proof of concept' te bestuderen en
                 daarna af te maken.</p>
+
             <h2>Analysefase</h2>
-            <p class="text-justify">Ik ben begonnen met verschillende delen van het project te analyseren. Als eerste
-                ben ik op zoek gegaan
-                naar een goed softwarepakket dat me kon helpen bij de nummerplaatherkenning. Deze heb ik dan
-                onmiddelijke in de praktijk beginnen testen. Zo heb ik stuk voor stuk toegewerkt naar mijn
+            <p class="text-justify">Ik begon dus met verschillende delen van het project te analyseren. Eerst
+                ben ik op zoek gegaan naar een goed softwarepakket dat me kon helpen bij de nummerplaatherkenning. Dit
+                heb ik dan onmiddelijke in de praktijk beginnen testen. Zo heb ik stuk voor stuk toegewerkt naar mijn
                 plaatherkennigns API.</p>
 
             <p class="text-justify">Vervolgens ben ik me gaan verdiepen in het Vidyano framework. Omdat dit framework
                 redelijk centraal staat in Rhea NV was dit de basis van mijn project en moest ik zorgen dat alle andere
-                componenten hiermee konden samen werken. Vidyano ondersteund zelf al enorm veel verschillende
+                componenten hiermee konden samen werken. Vidyano zelf ondersteunt al enorm veel verschillende
                 componenten die ik kon gebruiken waardoor het bijna niet meer nodig was om nog andere dingen te
                 integreren.</p>
+
             <h2>Realisatiefase</h2>
-            <p class="text-justify">De uitwerking van mijn opdracht omvat op dit punt een <b>docker</b> container met
+            <p class="text-justify">De uitwerking van mijn opdracht omvat op dit punt een <b>Docker</b> container met
                 daarin de
-                API die ik gemaakt heb. In deze docker container heb ik ook de software geïnstaleerd voor mijn
-                nummerplaat herkenning. Dit is een programa dat bij het opstarten maar een foto binnen krijgt en daarvan
-                een keer een output met mogelijkse nummerplaten terug geeft. De API gaat deze telken als hij een foto
-                binnen krijgt, dit programma opstarten en de foto doortsturen. De API vangt de respons op en geeft deze
+                API die ik gemaakt heb. In deze Docker container heb ik ook de software geïnstaleerd voor mijn
+                nummerplaatherkenning. Dit is een programa dat bij opstarten één foto binnen krijgt en daarvan
+                een output met mogelijkse nummerplaten teruggeeft. Telkens als je de API aanspreekt, start deze dit
+                programma en vangt de respons van de software op. Op zijn beurt geeft de API deze
                 als zijn antwoord terug door.</p>
 
-            <p class="text-justify">Daarnaast heb ik ook nog de applicatie in het <b>Vidyano</b> framework. Deze bevat
+            <p class="text-justify">Daarnaast heb ik ook nog de applicatie in het <b>Vidyano</b> framework gemaakt. Deze
+                bevat
                 de database met alle gegevens die de applicatie nodig heeft. Vidyano maakt gebruik van webcomponents op
-                basis van <b>"Polymer"</b>. Deze heb ik extra stijl gegeven met de <b>Bootstrap</b> library. De
-                applicatie zelf spreekt de achter camera aan van het toestel aan. Deze begint te filmen en stuurt op
-                regelmatige basis screenshots van de video door naar de API. Zodra deze een geldige respons terug geeft
-                stop de camera met filmen. Dan kan de gebruiker nog een melding selecteren of invullen en wordt er een
-                mail gestuurd naar de eigenaar van de bedrijfswagen met de melding. Zo kan deze notie nemen van het
+                basis van <b>'Polymer'</b>. Deze heb ik extra opmaak gegeven met de <b>Bootstrap</b> library. De
+                applicatie zelf spreekt de achtercamera van het toestel aan. Deze begint te filmen en stuurt op
+                regelmatige basis screenshots van de video door naar de API. Zodra deze een geldige respons teruggeeft
+                stopt de camera met filmen. Dan kan de gebruiker nog een melding selecteren of invullen en wordt er een
+                mail gestuurd naar de eigenaar van de bedrijfswagen met deze melding. Zo kan die notie nemen van het
                 voorval.</p>
 
-            <h2>Stage verloop</h2>
-            <p class="text-justify">Omdat ik een goede start heb genomen en een enorm goede analyse gedaan heb kon ik
-                enorm vlot starten met de realisatie van mijn stage. Daardoor was de uitwerking van mijn stageopdracht
-                redelijk snel klaar. We hebben de opdracht dan uitgebreid met enkele handige extra’s. Een daarvan was om
-                de foto knopte vervangen door de camera die filmt en constant zelf foto’s doorstuurt tot dat deze een
-                geldige nummerplaat vindt. Zo moet de gebruiker niet constant opnieuw de camera opstarten om een foto te
-                trekken als de foto niet duidelijk getrokken is vanaf de eerste keer.</p>
+            <h2>Stageverloop</h2>
+            <p class="text-justify">Omdat ik een goede start heb genomen en een diepgaande analyse gedaan heb kon ik
+                vlot starten met de realisatiefase van mijn stage. Daardoor was de uitwerking van mijn stageopdracht
+                snel klaar. We hebben de opdracht dan uitgebreid met enkele handige extra’s. Eén daarvan was
+                de fotoknop te vervangen door de filmende camera die constant foto’s doorstuurt tot een
+                geldige nummerplaat gevonden wordt. Zo moet de gebruiker niet constant de camera heropstarten om
+                een foto te trekken als er geen nummerplaat herkend wordt.</p>
 
-            <p class="text-justify">Nadat ik nog een aantal andere kleine verbeteringen heb gemaakt aan de applicatie
-                moeten we wachten op de
-                update van het framework. Deze update hield in dat Vidyano volledig compatibel is met docker. Na deze
-                update moest ik dus heel de applicatie overzetten en laten werken in docker containers. </p>
+            <p class="text-justify">Nadat ik nog een aantal andere kleine verbeteringen heb aangebracht aan de
+                applicatie
+                moesten we wachten op de
+                update van het framework. Deze update hield in dat Vidyano volledig compatibel is met Docker. Na deze
+                update moest ik dus heel de applicatie overzetten en laten werken in Docker containers. </p>
 
             <p class="text-justify">Tijdens de periode dat ik moest wachten op de update heb ik mezelf verdiept in het
-                gebruiken van docker containers en meer bepaald hoe je verschillende containers kan laten samenwerken
-                via docker-compose. Dit heb ik gedaan door een testproject volledig docker compatibel te maken en uit te
+                gebruiken van Docker containers en meer bepaald hoe je verschillende containers kan laten samenwerken
+                via Docker-compose. Dit heb ik gedaan door een testproject volledig Docker-compatibel te maken en uit te
                 zoeken hoe ik dit kan hosten. </p>
 
             <p class="text-justify">Na de update heb ik heel mijn applicatie overgezet en volledig laten werken in
-                docker. Dit was dan ook het einde van mijn stage.</p>
+                Docker. Dit was dan ook het einde van mijn stage.</p>
+
             <h2>Extra info</h2>
-            <p class="text-justify text-muted">Als u meer wilt weten over mijn stage en de opdracht zelf verwijs ik u
-                door naar de
-                documenten die ik gelinkt heb. Deze bevatten alle informatie over de opdracht en gaan dieper in op de
+            <p class="text-justify text-muted">Als u meer wilt weten over mijn stage of opdracht verwijs ik u
+                door naar de documenten die ik gelinkt heb. Deze bevatten alle informatie over de opdracht en gaan
+                dieper in op de
                 analyse, de realisatie en mijn uitwerking van de opdracht. De code staat ook beschikbaar op GitHub zodat
                 u deze kan bekijken.</p>
 
@@ -173,19 +176,19 @@
                             <div class="col-12">
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=130PqhXSzPCkAWtY00gUCvqlHUqqZ6Svc"
                                            download target="_blank">Analyse document</a>
                                     </li>
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=1-20_RVj4pa4KLdnedOLyqDTI5qD8UiZX"
                                            download target="_blank">Plan van aanpak</a>
                                     </li>
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=1Y8RJX8QJe9mHmtv2PUOs4p44SW6cgB3u"
                                            download target="_blank">Presentatie plan van aanpak analysefase</a>
                                     </li>
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=1cRHUO9nX0G_R85t0gtwmP75iGHVtE91o"
                                            download target="_blank">Database structuur</a>
                                     </li>
                                 </ul>
@@ -203,19 +206,19 @@
                                 <ul class="list-unstyled mb-0">
                                     <li>
                                         <a href="#"
-                                           download target="_blank">Gebruikers handleiding</a>
+                                           download target="_blank">Gebruikers handleiding --</a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                           download target="_blank">Installatie handleiding</a>
+                                           download target="_blank">Installatie handleiding --</a>
                                     </li>
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=18U3m7kn0zkYmE-AGTwGOUDOcJ5Mxm__-"
                                            download target="_blank">Plan van aanpak realisatiefase</a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                           download target="_blank">Eindpresentatie project</a>
+                                           download target="_blank">Eindpresentatie project --</a>
                                     </li>
                                 </ul>
                             </div>
@@ -250,16 +253,16 @@
                             <div class="col-12">
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=1vMvHlZx6RJQ0NmuIMmktoltgj5Juuiuq"
                                            download target="_blank">Presentatie terugkommoment</a>
                                     </li>
                                     <li>
-                                        <a href="#"
+                                        <a href="https://drive.google.com/open?id=1vJEldvO65w2y4dq2MhGAwoyqQVoknub8"
                                            download target="_blank">Reflextie verslag</a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                           download target="_blank">Logboek</a>
+                                           download target="_blank">Logboek --</a>
                                     </li>
                                 </ul>
                             </div>
