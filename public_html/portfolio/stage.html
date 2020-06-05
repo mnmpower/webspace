@@ -23,271 +23,332 @@
 
 </head>
 
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Afstudeerportfolio - Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="stage.html">Stage
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="project4.html">Project 4.0</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://icewire.be" target="_blank">Ice Honours</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Title -->
-    <h1 class="mt-4">Stage - Applicatie met nummerplaatherkenning</h1>
-
-    <!-- Author -->
-    <p class="lead">
-        Bij
-        <a href="https://www.rhea.be/">Rhea N.V.</a>
-    </p>
-
-    <hr>
-
-    <!-- Date/Time -->
-    <p>2 Maart 2020 - 29 mei 2020</p>
-
-    <hr>
-
-    <div class="row">
-
-        <!-- Post Content Column -->
-        <div class="col-lg-8 ">
-
-
-            <!-- Preview Image -->
-            <img class="img-fluid rounded" src="files/stage.jpg" alt="">
-
-            <hr>
-
-            <!-- Post Content -->
-            <p class="lead text-justify">Tijdens het laatste jaar van mijn studies in de ITFactory van Thomas More liep
-                ik gedurende 13 weken stage bij het bedrijf Rhea N.V. Dat is een klein bedrijf met een 15-tal
-                werknemers. Het is lid van de Cronos Groep en bestaat al meer dan 20 jaar. Voorlopig houdt het zich
-                bezig met drie grote pijlers:
-            </p>
-            <ul>
-                <li class="lead">Applicatie-ontwikkeling met IOT, AI en Robot gestuurde procesautomatisering</li>
-                <li class="lead">Herschrijven of herontwikkelen van oude applicaties</li>
-                <li class="lead">Onderhoud van zelfgemaakte applicaties</li>
-            </ul>
-
-            <h2>De opdracht</h2>
-            <p class="text-justify">Binnen het bedrijf Rhea NV was er de nood om een applicatie te maken om problemen
-                die zich voordoen op de parking vlotter af te kunnen handelen. Het bleef maar bij een idee omdat er nog
-                nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze 'proof of concept' te bestuderen en
-                daarna af te maken.</p>
-
-            <h2>Analysefase</h2>
-            <p class="text-justify">Ik begon dus met verschillende delen van het project te analyseren. Eerst
-                ben ik op zoek gegaan naar een goed softwarepakket dat me kon helpen bij de nummerplaatherkenning. Dit
-                heb ik dan onmiddelijke in de praktijk beginnen testen. Zo heb ik stuk voor stuk toegewerkt naar mijn
-                plaatherkennigns API.</p>
-
-            <p class="text-justify">Vervolgens ben ik me gaan verdiepen in het Vidyano framework. Omdat dit framework
-                redelijk centraal staat in Rhea NV was dit de basis van mijn project en moest ik zorgen dat alle andere
-                componenten hiermee konden samen werken. Vidyano zelf ondersteunt al enorm veel verschillende
-                componenten die ik kon gebruiken waardoor het bijna niet meer nodig was om nog andere dingen te
-                integreren.</p>
-
-            <h2>Realisatiefase</h2>
-            <p class="text-justify">De uitwerking van mijn opdracht omvat op dit punt een <b>Docker</b> container met
-                daarin de
-                API die ik gemaakt heb. In deze Docker container heb ik ook de software geïnstaleerd voor mijn
-                nummerplaatherkenning. Dit is een programa dat bij opstarten één foto binnen krijgt en daarvan
-                een output met mogelijkse nummerplaten teruggeeft. Telkens als je de API aanspreekt, start deze dit
-                programma en vangt de respons van de software op. Op zijn beurt geeft de API deze
-                als zijn antwoord terug door.</p>
-
-            <p class="text-justify">Daarnaast heb ik ook nog de applicatie in het <b>Vidyano</b> framework gemaakt. Deze
-                bevat
-                de database met alle gegevens die de applicatie nodig heeft. Vidyano maakt gebruik van webcomponents op
-                basis van <b>'Polymer'</b>. Deze heb ik extra opmaak gegeven met de <b>Bootstrap</b> library. De
-                applicatie zelf spreekt de achtercamera van het toestel aan. Deze begint te filmen en stuurt op
-                regelmatige basis screenshots van de video door naar de API. Zodra deze een geldige respons teruggeeft
-                stopt de camera met filmen. Dan kan de gebruiker nog een melding selecteren of invullen en wordt er een
-                mail gestuurd naar de eigenaar van de bedrijfswagen met deze melding. Zo kan die notie nemen van het
-                voorval.</p>
-
-            <h2>Stageverloop</h2>
-            <p class="text-justify">Omdat ik een goede start heb genomen en een diepgaande analyse gedaan heb kon ik
-                vlot starten met de realisatiefase van mijn stage. Daardoor was de uitwerking van mijn stageopdracht
-                snel klaar. We hebben de opdracht dan uitgebreid met enkele handige extra’s. Eén daarvan was
-                de fotoknop te vervangen door de filmende camera die constant foto’s doorstuurt tot een
-                geldige nummerplaat gevonden wordt. Zo moet de gebruiker niet constant de camera heropstarten om
-                een foto te trekken als er geen nummerplaat herkend wordt.</p>
-
-            <p class="text-justify">Nadat ik nog een aantal andere kleine verbeteringen heb aangebracht aan de
-                applicatie
-                moesten we wachten op de
-                update van het framework. Deze update hield in dat Vidyano volledig compatibel is met Docker. Na deze
-                update moest ik dus heel de applicatie overzetten en laten werken in Docker containers. </p>
-
-            <p class="text-justify">Tijdens de periode dat ik moest wachten op de update heb ik mezelf verdiept in het
-                gebruiken van Docker containers en meer bepaald hoe je verschillende containers kan laten samenwerken
-                via Docker-compose. Dit heb ik gedaan door een testproject volledig Docker-compatibel te maken en uit te
-                zoeken hoe ik dit kan hosten. </p>
-
-            <p class="text-justify">Na de update heb ik heel mijn applicatie overgezet en volledig laten werken in
-                Docker. Dit was dan ook het einde van mijn stage.</p>
-
-            <h2>Extra info</h2>
-            <p class="text-justify">Als u meer wilt weten over mijn stage of opdracht verwijs ik u
-                door naar de documenten die ik gelinkt heb. Deze bevatten alle informatie over de opdracht en gaan
-                dieper in op de
-                analyse, de realisatie en mijn uitwerking van de opdracht. De code staat ook beschikbaar op GitHub zodat
-                u deze kan bekijken.</p>
-
-            <hr>
-        </div>
-
-        <!-- Sidebar Widgets Column -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
-
-
-            <div class="row">
-                <!-- Categories Widget -->
-
-                <div class="card mb-3 col-md-6 col-lg-12">
-                    <h5 class="card-header">Analysefase</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=19IN7TN8u8Sb-EZG5rRx6AHrzlgnQJZOr"
-                                           download target="_blank">Analyse document</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1OcAyT27IhyIklwdVe6T6BtP7S7X5yeO7"
-                                           download target="_blank">Plan van aanpak</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1sU-e0T_Np30-nJ6-i-8IQzZ2KRENvd6S"
-                                           download target="_blank">Presentatie plan van aanpak</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1cRHUO9nX0G_R85t0gtwmP75iGHVtE91o"
-                                           download target="_blank">Database structuur</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Side Widget -->
-                <div class="card mb-3 col-md-6 col-lg-12">
-                    <h5 class="card-header">Realisatiefase</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1IMa3Sha1jfKdAGfyxxLngBajjt_sLEAY"
-                                           download target="_blank">Gebruikers handleiding</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1LJI279b6WpQ1k0-q5h4hQ3u9CZfLNcPz"
-                                           download target="_blank">Installatie handleiding</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=16rxktrMiLA0XXwugK1eMSBOKgQzXxSu1"
-                                           download target="_blank">Plan van aanpak realisatiefase</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 col-md-6 col-lg-12">
-                    <h5 class="card-header">Vergaderingen</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1BdBOVnCl6Tf0imFH5SdmfVfPTCu99H-B"
-                                           download target="_blank">Agenda Startvergadering</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1KICU4SVOvrMiYaG_44GC2WvrqPnAVREe"
-                                           download target="_blank">Verslag Startvergadering</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-3 col-md-6 col-lg-12">
-                    <h5 class="card-header">Overige</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1vMvHlZx6RJQ0NmuIMmktoltgj5Juuiuq"
-                                           download target="_blank">Presentatie terugkommoment</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/open?id=1S26rlAZ42Qd-Yt9l_Y4c1S2RG3ObY1Q1"
-                                           download target="_blank">Reflextie verslag</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                           download target="_blank">Logboek --</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Side Widget -->
-                <div class="card mb-3 col-md-6 col-lg-12">
-                    <h5 class="card-header">Code op GitHub</h5>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="https://github.com/mnmpower/Stage-Alpr-Docker" target="_blank" class="mx-2">
-                                    <i class="fab fa-github"></i> Vidyano Project - Frontend </a>
-                                <br>
-                                <a href="https://github.com/mnmpower/Stage---PlateAPI" target="_blank" class="mx-2">
-                                    <i class="fab fa-github"></i> .NET Core API met Docker
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+<body id="volledigeFotoAchtergrondStage">
+<div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Afstudeerportfolio - Stage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="stage.html">Stage
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project4.html">Project 4.0</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://icewire.be" target="_blank">Ice Honours</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- /.row -->
+    </nav>
 
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Title -->
+        <h1 class="mt-4">Stage - Applicatie met nummerplaatherkenning</h1>
+
+        <!-- Author -->
+        <p class="lead">
+            Bij
+            <a href="https://www.rhea.be/">Rhea N.V.</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>2 Maart 2020 - 29 mei 2020</p>
+
+        <hr>
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8 ">
+
+
+                <!-- Preview Image -->
+                <img class="img-fluid card-shadow img-rand" src="files/stage.jpg" alt="">
+
+                <div class="leesbaarOpFoto boxShadow mt-3">
+                    <!-- Post Content -->
+                    <p class="lead text-justify">Tijdens het laatste jaar van mijn studies in de ITFactory van Thomas
+                        More
+                        liep
+                        ik gedurende 13 weken stage bij het bedrijf Rhea N.V. Dat is een klein bedrijf met een 15-tal
+                        werknemers. Het is lid van de Cronos Groep en bestaat al meer dan 20 jaar.</p>
+
+                    <!--VANAF HIER-->
+                    <div id="accordion">
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        De opdracht
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    Binnen het bedrijf Rhea NV was er de nood om een applicatie te maken om
+                                    problemen
+                                    die zich voordoen op de parking vlotter af te kunnen handelen. Het bleef maar bij
+                                    een idee omdat
+                                    er
+                                    nog
+                                    nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze 'proof of
+                                    concept' te
+                                    bestuderen en
+                                    daarna af te maken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        Analysefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    Ik ben begonnen met verschillende delen van het project te analyseren. Eerst
+                                    ben ik op zoek gegaan naar een goed softwarepakket dat me kon helpen bij de
+                                    nummerplaatherkenning. Dit heb ik dan onmiddelijk in de praktijk beginnen testen.
+                                    Vervolgens ben ik me gaan verdiepen in het Vidyano framework. Omdat dit framework
+                                    redelijk centraal staat in Rhea NV was dit de basis van mijn project. Alle andere
+                                    componenten moesten hier dus mee kunnen samen werken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        Realisatiefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    De applicatie bestaat uit drie <b>Docker</b> containers. Deze kan je opstarten door
+                                    middel
+                                    van één commando. De eerste container bevat een mssql server en database. In de
+                                    tweede
+                                    container draait het front-end programma van <b>Vidyano</b>. De layout hiervan is
+                                    gemaakt
+                                    met <b>Polymer webcomponenten</b> met behulp van de <b>Bootstrap</b> library. De
+                                    derde container
+                                    bevat de <b>alpr software</b> en de zelfgeschreven <b>.NET CORE</b> api om deze aan
+                                    te spreken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                        Stageverloop
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="collapseFour"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    <div>
+                                        Omdat ik een goede start heb genomen en een diepgaande analyse gedaan heb kon ik
+                                        vlot starten met de realisatiefase van mijn stage. Daardoor was de uitwerking
+                                        van
+                                        mijn stageopdracht vroegtijdig klaar. We hebben de opdracht dan uitgebreid met
+                                        enkele handige extra’s.
+                                    </div>
+                                    <ul >
+                                        <li>De knop om een foto te trekken is vervangen door een filmende camera die op
+                                            regelmatige basis zelf een foto doorstuurt tot er een geldige nummerplaat
+                                            gevonden
+                                            is.
+                                        </li>
+                                        <li>Na de update van het Vidyano framework heb ik de applicatie volledig cross
+                                            platform
+                                            gemaakt en in docker containers gestoken om deze eenvoudig op te kunnen
+                                            starten.
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        Het laatste deel van mijn stage was het maken van de gebruikers- en
+                                        installatiehandleiding.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <h2>Extra info</h2>
+                    <p class="text-justify">
+                        wilt u meer weten over de uitwerking van de opdracht?
+                        Bekijk dan zeker de documenten die gelinkt zijn! De code staat ook beschikbaar op GitHub.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+
+                <!-- Categories Widget -->
+                <div class="card-deck">
+                    <div class="card mb-3 ">
+                        <h5 class="card-header">Analysefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=19IN7TN8u8Sb-EZG5rRx6AHrzlgnQJZOr"
+                                               download target="_blank">Analyse document</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1OcAyT27IhyIklwdVe6T6BtP7S7X5yeO7"
+                                               download target="_blank">Plan van aanpak</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1sU-e0T_Np30-nJ6-i-8IQzZ2KRENvd6S"
+                                               download target="_blank">Presentatie plan van aanpak</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1cRHUO9nX0G_R85t0gtwmP75iGHVtE91o"
+                                               download target="_blank">Database structuur</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                    <div class="card mb-3 ">
+                        <h5 class="card-header">Realisatiefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1IMa3Sha1jfKdAGfyxxLngBajjt_sLEAY"
+                                               download target="_blank">Gebruikershandleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1LJI279b6WpQ1k0-q5h4hQ3u9CZfLNcPz"
+                                               download target="_blank">Installatiehandleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=16rxktrMiLA0XXwugK1eMSBOKgQzXxSu1"
+                                               download target="_blank">Plan van aanpak realisatiefase</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-block d-lg-block"></div>
+                    <div class="card mb-3 ">
+                        <h5 class="card-header">Vergaderingen</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1BdBOVnCl6Tf0imFH5SdmfVfPTCu99H-B"
+                                               download target="_blank">Agenda startvergadering</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1KICU4SVOvrMiYaG_44GC2WvrqPnAVREe"
+                                               download target="_blank">Verslag startvergadering</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                    <div class="card mb-3 ">
+                        <h5 class="card-header">Overige</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1vMvHlZx6RJQ0NmuIMmktoltgj5Juuiuq"
+                                               download target="_blank">Presentatie terugkommoment</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1S26rlAZ42Qd-Yt9l_Y4c1S2RG3ObY1Q1"
+                                               download target="_blank">Reflextie verslag</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/1XIR9gZr13ukJqNgAr2CmtFSswjDgu9mu/view?usp=sharing"
+                                               download target="_blank">Logboek</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-block d-md-none d-lg-block"></div>
+                    <div class="card mb-3 ">
+                        <h5 class="card-header">Code op GitHub</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="https://github.com/mnmpower/Stage-Alpr-Docker" target="_blank"
+                                       class="mx-2">
+                                        <i class="fab fa-github"></i> Vidyano Project - Frontend </a>
+                                    <br>
+                                    <a href="https://github.com/mnmpower/Stage---PlateAPI" target="_blank"
+                                       class="mx-2">
+                                        <i class="fab fa-github"></i> .NET Core API met Docker
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
 </div>
 <!-- /.container -->
 

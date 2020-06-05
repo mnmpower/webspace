@@ -6,3 +6,38 @@
 body {
   padding-top: 56px;
 }
+
+#volledigeFotoAchtergrondProject{
+  background-image: url("../files/brugkraan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#volledigeFotoAchtergrondStage{
+  background-image: url("../files/flitspaal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leesbaarOpFoto{
+  background-color: white;
+  padding: 15px 20px 5px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.boxShadow{
+  -webkit-box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.75);
+}
+.card-shadow{
+  -webkit-box-shadow: 5px 5px 40px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 40px -7px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 40px -7px rgba(0,0,0,0.75);
+}
+
+.img-rand{
+  border: 2px solid #000;
+}
+
