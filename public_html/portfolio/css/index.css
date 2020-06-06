@@ -1,0 +1,222 @@
+.div{
+    height: calc(100vh);
+    scroll-snap-align: start;
+    color: #DDD;
+    position: relative;
+    background-image: url("../files/volleybal.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sec-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+}
+
+.presentation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+    font-weight: normal;
+}
+
+.sec-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.sec-header>h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#cursor {
+    animation: blink 1s infinite;
+}
+
+img.head{
+    height: 16em;
+    opacity: 0.5;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: opacity 0.5s, transform 1s;
+    transform: translate(-4em);
+}
+
+img.head:hover{
+    opacity: .9;
+    transform: translate(-2em);
+}
+
+.half-header{
+    flex-basis: 40%;
+}
+
+.half-header-r{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.avatar{
+    text-align: right;
+}
+
+
+p.head {
+    text-align: left;
+    font-size: 2.5em;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.line1 {
+    color: #9cd9f0;
+    animation: type 0.5s 1s steps(20, end) forwards;
+}
+
+.cursor1 {
+    animation: blink 1s 2s 2 forwards;
+}
+
+.line2 {
+    color: #9cd9f0;
+    animation: type 0.5s 4.25s steps(20, end) forwards;
+}
+
+.cursor2 {
+    animation: blink 1s 5.25s 2 forwards;
+}
+
+.line3 {
+    color: #9cd9f0;
+    animation: type 0.5s 7.5s steps(20, end) forwards;
+}
+
+.cursor3 {
+    animation: blink 1s 8.5s 2 forwards;
+}
+
+.line4 {
+    color: #9cd9f0;
+    animation: type 0.5s 10.75s steps(20, end) forwards;
+}
+
+.cursor4 {
+    animation: blink 1s 8.5s infinite;
+}
+
+@keyframes type {
+    to {
+        width: 17em;
+    }
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.normal{
+    color: white;
+}
+
+.plainText{
+    color: #000;
+}
+.signup-section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../files/brugkraan.jpg")!important;
+    background-position: center;
+    background-repeat:no-repeat !important;
+    background-attachment: scroll;
+    background-size: cover !important;
+    height: 800px;
+}
+.stage-section{
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../files/parking.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 800px;
+}
+
+.textOpFoto{
+    color: #fff;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+.geentextOpFoto{
+    margin-top: 150px;
+    text-shadow: none;
+}
+
+.onder-foto{
+    margin-bottom: 300px;
+}
+.bg-black {
+    background-color: #161616 !important;
+}
+
+.bg-light{background-color:#f8f9fa!important}
+
+.btn.btn-link{
+    box-shadow: none!important;
+}
+.card.no-border{
+    border-bottom: none !important;
+}
+
+#mainNav .navbar-brand{
+    color: #000!important;
+}
+
+#mainNav .nav-link{
+    color: #161616!important;
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d !important;
+}
+
+#icehonours{
+    min-height: 100vh;
+}

@@ -14,139 +14,691 @@
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/index.css">
     <link href="css/blog-post.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/grayscale.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
 
 </head>
 
 <body>
 
+
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white text-black" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="#">Afstudeerportfolio - Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand js-scroll-trigger" href="#top">Welkom</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="stage.html">Stage</a>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#getStarted">Over mij</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="project4.html">Project 4.0</a>
+                    <a class="nav-link js-scroll-trigger" href="#stage">Stage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://icewire.be" target="_blank">Ice Honours</a>
+                    <a class="nav-link js-scroll-trigger" href="#icehonours">ICE-Honours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#project">Project 4.0</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
+
+<div class="div div-header" id="top">
+    <section class="sec sec-header">
+        <h1>Hey! Ik ben <a href="../index.html" class="normal">Maarten Michiels</a><span id="cursor">|</span></h1>
+        <hr class="col-xs-12 d-none d-sm-block"
+            style="background-color: white; width: 90%; height: 2px; border-radius: 3px">
+        <div class="presentation">
+            <section class="half-header avatar d-none d-md-block">
+                <img class="head" src="../img/maarten.jpg" alt="Profiel foto Maarten Michiels">
+            </section>
+            <section class="half-header-r d-none d-sm-none d-md-block">
+                <p class="line1 head">&#91;&nbsp;&ldquo;Zoek je mijn portfolio?&rdquo;<span class="cursor1">_</span>
+                </p>
+                <p class="line2 head">&nbsp;&nbsp;&ldquo;Scroll naar beneden...&rdquo;<span class="cursor2">_</span>
+                </p>
+                <p class="line3 head">&nbsp;&nbsp;&ldquo;<a href="#getStarted" class="js-scroll-trigger">Of klik
+                    hier ;)</a>!&rdquo;&nbsp;&#93;<span
+                        class="cursor3">_</span></p>
+                <p class="line4 head">><span class="cursor4">_</span></p>
+            </section>
+        </div>
+    </section>
+</div>
+
 <!-- Page Content -->
 <div class="container text-center ">
-
-    <!-- Title -->
-    <h1 class="mt-4">Welkom!</h1>
-
-    <!-- Author -->
-    <p class="lead">
-        bij
-        <a href="../index.html">Maarten Michiels</a>
-    </p>
-
     <hr>
 
-    <!-- Date/Time -->
-    <p>Thomas More - ITFactory: September 2017 - Juli 2020</p>
+    <blockquote class="blockquote" id="getStarted">
+        <p class="mb-0">I'm more interested in the future than in the past, because the future is where I intend to
+            live.</p>
+        <footer class="blockquote-footer pt-2 pb-2">
+            <cite title="Source Title">Albert Einstein</cite>
+        </footer>
+    </blockquote>
+
 
     <hr>
-
-    <!-- Preview Image -->
-    <img class="img-fluid rounded" src="../img/maarten.jpg" alt="">
-
-    <hr>
-    <div class="text-justify">
+    <div class="text-justify row">
         <!-- Post Content -->
-        <h2>Wie ben ik?</h2>
-        <p class="lead">
-            Ik ben een student op Thomas More Geel en volg de richting 'ITFactory'. Buiten studeren ben ik ook nog een
-            topsporter. Ik speel momenteel volleybal bij 'Vamos Stekene - Sint-Gilles-Waas' in eerste nationale. Deze
-            twee activiteiten zijn mijn grootste tijdsbesteding. Als ik toch nog een beetje tijd vind speel ik enorm
-            graag piano. Vroeger deed ik ook nog aan goochelen maar dit staat op een break tot na mijn studie.
-
-        </p>
-        <h2>Mijn studiekeuze</h2>
-        <p>Toen ik afstudeerde in mijn middelbaar had ik een diploma TSO – Lichamelijke opvoeding en Sport. Ik wilde
-            graag een leerkracht worden maar mijn ouders stonden er op dat ik verder studeerde dus was mijn keuze
-            triviaal. Ik
-            schreef me in voor de opleiding Leerkracht met de vakkencombinatie 'Lichamelijke opvoeding' en
-            'Wiskunde'. Door mijn dysorthografie, gekenmerkt door spellingsmoeilijkheden, was deze opleiding niet
-            evident. Al snel merkte ik dat ik
-            hierop werd afgerekend en verdween mijn motivatie om te werken voor school als sneeuw voor de zon. Het
-            gevolg hiervan is dat ik na bijna 3 jaar stopte met deze opleiding.</p>
-
-        <p>Ik wou niet zomaar thuis blijven zitten en ging dus werk zoeken. Ik had natuurlijk
-            niet voldoende kennis om ergens te beginnen maar mijn ouders kwamen met een oplossing: een
-            jaar in het volwassenonderwijs gaan studeren. Zo kon ik verschillende aspecten van houtbewerking in
-            sneltempo leren om nadien te gaan werken. Dit heb ik dan ook gedaan, maar nog steeds was dit niet mijn eigen
-            keuze.</p>
-
-        <p>Na twee jaar werken in een houtverwerkingsbedrijf had ik een enorm goede band met één van mijn toenmalige
-            collega’s. Ik vertelde hem dat ik me niet goed meer voelde bij mijn werk. Ik kreeg geen
-            appreciatie voor wat ik deed. Na lang praten heeft hij me aan het denken gezet. Niemand verplichtte mij om
-            daar te werken. Ik kon perfect terug gaan studeren. Enkel kon ik deze keer zelf de keuze maken, en werd ze
-            me niet opgelegd. En na een paar maanden goed zoeken en nadenken heb ik een keuze gemaakt
-            waar ik eindelijk 100% achter sta. Een richting die volop evolueert en waar je zo kan inspringen als je wilt
-            bijleren. Een richting waarin mensen verwachten dat je denkt. Een richting waar na afstuderen werk
-            verzekerd is: Toegepaste informatica!</p>
-
-        <h2>Het portfolio</h2>
-        <p>In dit portfolio vertel ik over mijn projecten en bezigheden van mijn laatste studiejaar. In het bijzonder
-            wil ik drie projecten van mezelf toelichten. Ten eerste <b>mijn stageopdracht</b>. Als tweede <b>Project
-                4.0</b> en tot slot een project dat ik samen met vijf andere studenten van Thomas more heb opgestart in
-            kader van <b>Ice-Honours</b>. De link in de navigatiebalk brengt je naar de website die ik volledig gemaakt
-            heb.</p>
-
-        <p>U kan eenvoudig in de navigatiebalk bovenaan doorklikken naar al mijn bewijsstukken en realisaties. Elke
-            pagina bevat één bewijsstuk of realisatie. Deze wordt telkens uitvoerig besproken. Op elke pagina worden
-            ook een aantal bestanden aangeboden die u kan downloaden en bekijken. Dit kunnen bijvoorbeeld
-            analysedocumenten zijn over het betreffende project.</p>
+        <div class="col-sm-12 col-md-6">
+            <h2>Wie ben ik?</h2>
+            <p class="lead">
+                Ik ben een student op Thomas More Geel en volg de richting 'ITFactory'. Buiten studeren ben ik ook nog
+                een
+                topsporter. Ik speel momenteel volleybal bij 'Vamos Stekene - Sint-Gilles-Waas' in eerste nationale.
+                Deze
+                twee activiteiten zijn mijn grootste tijdsbesteding. Als ik toch nog een beetje tijd vind speel ik enorm
+                graag piano. Vroeger deed ik ook nog aan goochelen maar dit staat op een break tot na mijn studie.
+            </p>
+        </div>
 
 
-        <hr>
-        <h2>Mijn CV</h2>
-        <iframe width="100%" height="800" src="files/CV%20Maarten_Michiels.pdf" frameborder="1"
-                allowfullscreen></iframe>
-        <hr>
+        <div class="col-sm-12 col-md-6">
+            <h2>Het portfolio</h2>
+            <p class="lead">In dit portfolio wil ik tonen waarom ik het waardig ben om af te studeren met een bachlor in
+                de toegepaste informatica. Op deze pagina kan u alle uitleg en bestanden vinden van mijn projecten en
+                bezigheden van mijn laatste studiejaar. In het bijzonder wil ik drie projecten van mezelf toelichten.
+                Ten eerste <b>mijn stageopdracht</b>.
+                Als tweede een project dat ik samen met vijf andere studenten van Thomas more heb opgestart in kader van
+                <b>Ice-Honours</b>. Tot slot vertel ik nog meer over<b>Project 4.0</b>.
+        </div>
 
-        <blockquote class="blockquote">
-            <p class="mb-0">I'm more interested in the future than in the past, because the future is where I intend to
-                live.</p>
-            <footer class="blockquote-footer">
-                <cite title="Source Title">Albert Einstein</cite>
-            </footer>
-        </blockquote>
     </div>
 </div>
 
+<!-- About Section -->
+<section id="about" class=" text-center mt-3">
+    <div class="container">
+        <div class="col-12 mb-5"><h2>Mijn CV</h2>
+            <iframe width="100%" height="550" src="files/CV%20Maarten_Michiels.pdf"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- stage Section -->
+<section id="stage" class="stage-section">
+    <div class="container">
+        <div class="row onder-foto">
+            <div class="col-md-10 col-lg-8 mx-auto text-center textOpFoto">
+
+                <h2 class="mt-4">Stage - Applicatie met nummerplaatherkenning</h2>
+                <p class="mt-1">2 Maart 2020 - 29 mei 2020</p>
+                <a href="#stagetext" class="btn btn-primary js-scroll-trigger geentextOpFoto">Lees meer over mijn stage.</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+<section class="contact-section bg-black" id="stagetext">
+    <div class="container">
+        <div class="row">
+            <!-- Post Content -->
+            <p class="lead text-justify text-white">Tijdens het laatste jaar van mijn studies in de ITFactory van Thomas
+                More
+                liep
+                ik gedurende 13 weken stage bij het bedrijf Rhea N.V. Dat is een klein bedrijf met een 15-tal
+                werknemers. Het is lid van de Cronos Groep en bestaat al meer dan 20 jaar.</p>
+            <!-- Post Content Column -->
+            <div class="col-lg-8 ">
+
+                <div class="">
+
+
+                    <!-- Preview Image -->
+                    <img class="img-fluid card-shadow rounded mb-3" src="files/stage.jpg" alt="">
+
+                    <!--VANAF HIER-->
+                    <div id="accordion">
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        De opdracht
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    Binnen het bedrijf Rhea NV was er de nood om een applicatie te maken om
+                                    problemen
+                                    die zich voordoen op de parking vlotter af te kunnen handelen. Het bleef maar bij
+                                    een idee omdat
+                                    er
+                                    nog
+                                    nooit iemand aan begonnen was. Mijn stage bestond er dus uit om deze 'proof of
+                                    concept' te
+                                    bestuderen en
+                                    daarna af te maken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        Analysefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    Ik ben begonnen met verschillende delen van het project te analyseren. Eerst
+                                    ben ik op zoek gegaan naar een goed softwarepakket dat me kon helpen bij de
+                                    nummerplaatherkenning. Dit heb ik dan onmiddelijk in de praktijk beginnen testen.
+                                    Vervolgens ben ik me gaan verdiepen in het Vidyano framework. Omdat dit framework
+                                    redelijk centraal staat in Rhea NV was dit de basis van mijn project. Alle andere
+                                    componenten moesten hier dus mee kunnen samen werken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        Realisatiefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    De applicatie bestaat uit drie <b>Docker</b> containers. Deze kan je opstarten door
+                                    middel
+                                    van één commando. De eerste container bevat een mssql server en database. In de
+                                    tweede
+                                    container draait het front-end programma van <b>Vidyano</b>. De layout hiervan is
+                                    gemaakt
+                                    met <b>Polymer webcomponenten</b> met behulp van de <b>Bootstrap</b> library. De
+                                    derde container
+                                    bevat de <b>alpr software</b> en de zelfgeschreven <b>.NET CORE</b> api om deze aan
+                                    te spreken.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                        Stageverloop
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="collapseFour"
+                                 data-parent="#accordion">
+                                <div class="card-body text-justify">
+                                    <div>
+                                        Omdat ik een goede start heb genomen en een diepgaande analyse gedaan heb kon ik
+                                        vlot starten met de realisatiefase van mijn stage. Daardoor was de uitwerking
+                                        van
+                                        mijn stageopdracht vroegtijdig klaar. We hebben de opdracht dan uitgebreid met
+                                        enkele handige extra’s.
+                                    </div>
+                                    <ul>
+                                        <li>De knop om een foto te trekken is vervangen door een filmende camera die op
+                                            regelmatige basis zelf een foto doorstuurt tot er een geldige nummerplaat
+                                            gevonden
+                                            is.
+                                        </li>
+                                        <li>Na de update van het Vidyano framework heb ik de applicatie volledig cross
+                                            platform
+                                            gemaakt en in docker containers gestoken om deze eenvoudig op te kunnen
+                                            starten.
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        Het laatste deel van mijn stage was het maken van de gebruikers- en
+                                        installatiehandleiding.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <h2 class="text-white">Extra info</h2>
+                    <p class="text-justify text-white">
+                        wilt u meer weten over de uitwerking van de opdracht?
+                        Bekijk dan zeker de documenten die gelinkt zijn! De code staat ook beschikbaar op GitHub.
+                    </p>
+
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+
+                <!-- Categories Widget -->
+                <div class="card-deck">
+                    <div class="card mb-3 no-border">
+                        <h5 class="card-header">Analysefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=19IN7TN8u8Sb-EZG5rRx6AHrzlgnQJZOr"
+                                               download target="_blank">Analyse document</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1OcAyT27IhyIklwdVe6T6BtP7S7X5yeO7"
+                                               download target="_blank">Plan van aanpak</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1sU-e0T_Np30-nJ6-i-8IQzZ2KRENvd6S"
+                                               download target="_blank">Presentatie plan van aanpak</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1cRHUO9nX0G_R85t0gtwmP75iGHVtE91o"
+                                               download target="_blank">Database structuur</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                    <div class="card mb-3 no-border">
+                        <h5 class="card-header">Realisatiefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1IMa3Sha1jfKdAGfyxxLngBajjt_sLEAY"
+                                               download target="_blank">Gebruikershandleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1LJI279b6WpQ1k0-q5h4hQ3u9CZfLNcPz"
+                                               download target="_blank">Installatiehandleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=16rxktrMiLA0XXwugK1eMSBOKgQzXxSu1"
+                                               download target="_blank">Plan van aanpak realisatiefase</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-none d-sm-block d-md-block d-lg-block"></div>
+                    <div class="card mb-3 no-border">
+                        <h5 class="card-header">Vergaderingen</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1BdBOVnCl6Tf0imFH5SdmfVfPTCu99H-B"
+                                               download target="_blank">Agenda startvergadering</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1KICU4SVOvrMiYaG_44GC2WvrqPnAVREe"
+                                               download target="_blank">Verslag startvergadering</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                    <div class="card mb-3 no-border">
+                        <h5 class="card-header">Overige</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1vMvHlZx6RJQ0NmuIMmktoltgj5Juuiuq"
+                                               download target="_blank">Presentatie terugkommoment</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1S26rlAZ42Qd-Yt9l_Y4c1S2RG3ObY1Q1"
+                                               download target="_blank">Reflextie verslag</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/1XIR9gZr13ukJqNgAr2CmtFSswjDgu9mu/view?usp=sharing"
+                                               download target="_blank">Logboek</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-block d-md-none d-lg-block"></div>
+                    <div class="card mb-3 no-border">
+                        <h5 class="card-header">Code op GitHub</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="https://github.com/mnmpower/Stage-Alpr-Docker" target="_blank"
+                                       class="mx-2">
+                                        <i class="fab fa-github"></i> Vidyano Project - Frontend </a>
+                                    <br>
+                                    <a href="https://github.com/mnmpower/Stage---PlateAPI" target="_blank"
+                                       class="mx-2">
+                                        <i class="fab fa-github"></i> .NET Core API met Docker
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row --></div>
+</section>
+
+<section id="icehonours" class="projects-section bg-light">
+    <div class="container">
+        <h2 class="text-center">ICE - Honours</h2>
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7">
+                <a href="https://icewire.be" target="_blank"><img class="img-fluid mb-3 mb-lg-0"
+                                                                  src="files/ice-wire.jpg"
+                                                                  alt="Ice Wire"></a>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Team ICE-Wire</h4>
+                    <p class="text-black-50 mb-0">
+                        Het ICE -Honours traject is bedoeld om studenten te helpen een impact te creëren naast hun
+                        opleiding. Ze worden in kleine teams geplaatst en krijgen dan coaching. Als u op de foto klikt
+                        dan krijgt u de website te zien die ik gemaakt heb voor ons project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Project4.0 Section -->
+<section id="project" class="signup-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center textOpFoto">
+
+                <h2 class="mt-4">Project 4.0 - Monitoring van de veiligheid rond een bewegende last</h2>
+                <p class="mt-1">20 Januari 2020 - 28 Februari 2020</p>
+                <a href="#projecttext" class="btn btn-primary js-scroll-trigger geentextOpFoto">Lees meer over mijn project.</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-section bg-black" id="projecttext">
+    <div class="container">
+        <div class="row">
+            <!-- Post Content -->
+            <p class="lead text-justify text-white">Tijdens de lessen van "Project 4.0” in 3 ITF heb ik als deel van een
+                multidisciplinair team gewerkt aan een project om de veiligheid in het staalbedrijf Aperam te
+                verbeteren. Dit project moest een totaaloplossing worden die zowel de veiligheid verbeterde als de
+                nodige overtredingen bijhield. </p>
+            <!-- Post Content Column -->
+            <div class="col-lg-8 ">
+
+                <div class="">
+
+
+                    <!-- Preview Image -->
+                    <iframe width="100%" height="410" src="https://www.youtube.com/embed/UAeF6C__JPw"
+                            allowfullscreen></iframe>
+
+                    <!--VANAF HIER-->
+                    <div id="accordion2">
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingOne2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne2"
+                                            aria-expanded="true" aria-controls="collapseOne2" >
+                                        De opdracht
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2"
+                                 data-parent="#accordion2">
+                                <div class="card-body text-justify">
+                                    Binnen het bedrijf Aperam is er een bewegende brugkraan. Dit is een enorme kraan
+                                    die over het grootste deel van de werkvloer kan bewegen. Deze kraan kan een zware
+                                    ballast dragen en is nodig voor de werking van het bedrijf. Het is uiteraard niet
+                                    veilig om hier onderdoor te lopen maar dit gebeurt toch. Omdat dit niet mag volgens
+                                    de veiligheidsvoorschriften is er gevraagd of we een oplossing konden bedenken om de
+                                    werkvloer te monitoren en deze dan ook te realiseren.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingTwo2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo2" aria-expanded="false"
+                                            aria-controls="collapseTwo2">
+                                        Analysefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2"
+                                 data-parent="#accordion2">
+                                <div class="card-body text-justify">
+                                    Voor dit project besteedde mijn team acht weken aan de analysefase. Elke
+                                    week kregen we één namiddag om hieraan te werken. Iedereen had dan opzoekwerk gedaan
+                                    over één bepaald aspect. We zaten dan samen om dit uitvoerig te bespreken. Dit
+                                    schreef ik dan neer in een analysedocument. Na de analysefase kregen we vier weken
+                                    tijd om dit project effectief uit te werken. Ik heb dus ook twee aparte GitHub
+                                    repositories aangemaakt om de projecten op een goede manier bij te houden.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-shadow">
+                            <div class="card-header" id="headingThree2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree2" aria-expanded="false"
+                                            aria-controls="collapseThree2">
+                                        Realisatiefase
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2"
+                                 data-parent="#accordion2">
+                                <div class="card-body text-justify">
+                                    Mijn bijdrage aan dit project was het maken van de applicatie. Als frontend
+                                    framework heb ik gekozen voor Angular. De bijhorende API heb ik geschreven in
+                                    asp.NET. De applicatie zelf bestaat uit twee delen. Het eerste deel is een
+                                    dashboard met alle overtredingen van het personeel. Het tweede deel is de
+                                    beheerderskant waarop alles nauwgezet opgevolgd kan worden. Zo heeft de beheerder
+                                    een live overzicht van de gevarenzonen waar hij de werknemers kan volgen en een
+                                    pagina waar alle overtreding op staan.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <h2 class="text-white">Extra info</h2>
+                    <p class="text-justify text-white">
+                        wilt u meer weten over de uitwerking van de opdracht?
+                        Bekijk dan zeker de documenten die gelinkt zijn! De code staat ook beschikbaar op GitHub.
+                    </p>
+
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+
+                <!-- Categories Widget -->
+                <div class="card-deck">
+
+                    <div class="card mb-3 card-shadow">
+                        <h5 class="card-header">Analysefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1O69dKvQ9cRA5FgPc1soH1Vjsu2SOAKas"
+                                               download target="_blank">Analyse document</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=116UTlfwx82wBe-uA9hShlcdab1EiMqwZ"
+                                               download target="_blank">Presentatie analysefase</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=19QCVnp59z4AZG_VxhxB6mNTO09edwkwe"
+                                               download target="_blank">Presentatie plan van aanpak</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/1iz2rUMYmGiUeSAw67pgfxuXOoBfWwGwk/view?usp=sharing"
+                                               download target="_blank">Taakverdeling</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1J6jgoG3H_PeJHXNJZiL5n5heVFWp66HD"
+                                               download target="_blank">Schets dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1vJorNiDKujOV5qTAHdvEU5wPSOOGi4hP"
+                                               download target="_blank">Schets live chart</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1GsuD_Wx-HTW_BZj6YkfpG_TvwgqEQXyE"
+                                               download target="_blank">Database structuur</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                    <div class="card mb-3 card-shadow">
+                        <h5 class="card-header">Realisatiefase</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1gOdNH1dLCRXn5Ft1qaZ-fg7J1XpMqHt5"
+                                               download target="_blank">Gebruikers handleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1XCKMa1zEit6B3cXkbyHxW0SiUfaTSMIC"
+                                               download target="_blank">Installatie handleiding</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=15ehHk3l0yyUBD0fFgfQ-Y8glew8Ccp1c"
+                                               download target="_blank">Eindpresentatie project</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1qzbdAqDHR2evR2ArDrRP0yhkc7kARlIP"
+                                               download target="_blank">Scrumboard foto</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/1nsfJoeIuS7DIvQSmR2oKtHIuUrnh05H6/view?usp=sharing"
+                                               download target="_blank">Scrum document</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/open?id=1q7213L2s3oOfThHTaWE3zKX0DCmrrFkm"
+                                               download target="_blank">Affiche voorstelling project</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Widget -->
+                    <div class="w-100 d-none d-sm-block d-md-block d-lg-block"></div>
+                    <div class="card mb-3 card-shadow">
+                        <h5 class="card-header">Code op GitHub</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="https://github.com/mnmpower/AngularAperam" target="_blank"
+                                       class="mx-2">
+                                        <i class="fab fa-github"></i> Angular applicatie - Frontend
+                                    </a>
+                                    <br>
+                                    <a href="https://github.com/r0703354/API_Aperam" target="_blank" class="mx-2">
+                                        <i class="fab fa-github"></i> asp.NET webAPI - Backend
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row --></div>
+</section>
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="bg-black small text-center text-white-50">
     <div class="container">
-        <p class="m-0 text-center text-white">&copy; Maarten Michiels 2020</p>
+        <p class="m-0 text-center text-white">Thomas More - ITFactory --- September 2017 - Juli 2020</p>
+        <p>&copy; Maarten Michiels 2020</p>
     </div>
-    <!-- /.container -->
 </footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<!-- Custom scripts for this template -->
+<script src="../js/grayscale.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 
 </html>
